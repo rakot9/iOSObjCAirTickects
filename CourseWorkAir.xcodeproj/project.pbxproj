@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28401A9467B75EF9CC31EA8A /* Pods_CourseWorkAir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD520A6EA082009E2A6191C /* Pods_CourseWorkAir.framework */; };
+		77813132202A481900E5CA40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813131202A481900E5CA40 /* AppDelegate.m */; };
+		77813135202A481900E5CA40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813134202A481900E5CA40 /* ViewController.m */; };
+		77813138202A481900E5CA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77813136202A481900E5CA40 /* Main.storyboard */; };
+		7781313A202A481900E5CA40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77813139202A481900E5CA40 /* Assets.xcassets */; };
+		7781313D202A481900E5CA40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7781313B202A481900E5CA40 /* LaunchScreen.storyboard */; };
+		77813140202A481900E5CA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781313F202A481900E5CA40 /* main.m */; };
+		7781314A202A4FBA00E5CA40 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 77813147202A4FBA00E5CA40 /* airports.json */; };
+		7781314B202A4FBA00E5CA40 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 77813148202A4FBA00E5CA40 /* cities.json */; };
+		7781314C202A4FBA00E5CA40 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 77813149202A4FBA00E5CA40 /* countries.json */; };
+		77813167202A5BFC00E5CA40 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781315A202A5BFB00E5CA40 /* TicketsViewController.m */; };
+		77813168202A5BFC00E5CA40 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781315C202A5BFB00E5CA40 /* MainViewController.m */; };
+		7781316A202A5BFC00E5CA40 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781315E202A5BFB00E5CA40 /* ContentViewController.m */; };
+		7781316B202A5BFC00E5CA40 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813160202A5BFC00E5CA40 /* MapViewController.m */; };
+		7781316C202A5BFC00E5CA40 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813164202A5BFC00E5CA40 /* TabBarController.m */; };
+		7781316D202A5BFC00E5CA40 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813165202A5BFC00E5CA40 /* PlaceViewController.m */; };
+		7781317A202A5C4B00E5CA40 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781316E202A5C4B00E5CA40 /* DataManager.m */; };
+		7781317B202A5C4B00E5CA40 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813170202A5C4B00E5CA40 /* APIManager.m */; };
+		7781317C202A5C4B00E5CA40 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813171202A5C4B00E5CA40 /* NotificationCenter.m */; };
+		7781317D202A5C4B00E5CA40 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813174202A5C4B00E5CA40 /* CoreDataHelper.m */; };
+		7781317E202A5C4B00E5CA40 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813177202A5C4B00E5CA40 /* LocationService.m */; };
+		7781317F202A5C4B00E5CA40 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813179202A5C4B00E5CA40 /* NSString+Localize.m */; };
+		77813185202A5C9400E5CA40 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813182202A5C9400E5CA40 /* TicketTableViewCell.m */; };
+		77813186202A5C9400E5CA40 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813183202A5C9400E5CA40 /* ProgressView.m */; };
+		77813196202A5CCB00E5CA40 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781318B202A5CCA00E5CA40 /* Country.m */; };
+		77813197202A5CCB00E5CA40 /* FavoriteTicket+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781318D202A5CCA00E5CA40 /* FavoriteTicket+CoreDataClass.m */; };
+		77813198202A5CCB00E5CA40 /* FavoriteTicket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781318E202A5CCA00E5CA40 /* FavoriteTicket+CoreDataProperties.m */; };
+		77813199202A5CCB00E5CA40 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813191202A5CCA00E5CA40 /* Ticket.m */; };
+		7781319A202A5CCB00E5CA40 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813193202A5CCB00E5CA40 /* City.m */; };
+		7781319B202A5CCB00E5CA40 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813194202A5CCB00E5CA40 /* MapPrice.m */; };
+		7781319C202A5CCB00E5CA40 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 77813195202A5CCB00E5CA40 /* Airport.m */; };
+		7781319E202A5EB000E5CA40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7781319D202A5EAF00E5CA40 /* Podfile */; };
+		7781324B202CE16700E5CA40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77813249202CE16600E5CA40 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77813236202A615400E5CA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781322F202A615300E5CA40 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D85F56567CC578926C552A3086F5935;
+			remoteInfo = "Pods-CourseWorkAir";
+		};
+		77813238202A615400E5CA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781322F202A615300E5CA40 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6D222FAC7B918964394AF91DFA263F6;
+			remoteInfo = YYCache;
+		};
+		7781323A202A615400E5CA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781322F202A615300E5CA40 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B288E433F424C85FB0F6F7CB80B0008;
+			remoteInfo = YYImage;
+		};
+		7781323C202A615400E5CA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781322F202A615300E5CA40 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6182CECBCEE256A45A5F702BB8FE0709;
+			remoteInfo = YYWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E6BF27D31EFE8489BFB490C /* Pods-CourseWorkAir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseWorkAir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CourseWorkAir/Pods-CourseWorkAir.debug.xcconfig"; sourceTree = "<group>"; };
+		7781312D202A481900E5CA40 /* CourseWorkAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseWorkAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77813130202A481900E5CA40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77813131202A481900E5CA40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77813133202A481900E5CA40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77813134202A481900E5CA40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77813139202A481900E5CA40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7781313C202A481900E5CA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7781313E202A481900E5CA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7781313F202A481900E5CA40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77813147202A4FBA00E5CA40 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		77813148202A4FBA00E5CA40 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		77813149202A4FBA00E5CA40 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		77813159202A5BFB00E5CA40 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7781315A202A5BFB00E5CA40 /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		7781315B202A5BFB00E5CA40 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		7781315C202A5BFB00E5CA40 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7781315E202A5BFB00E5CA40 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		7781315F202A5BFB00E5CA40 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		77813160202A5BFC00E5CA40 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		77813161202A5BFC00E5CA40 /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		77813162202A5BFC00E5CA40 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		77813163202A5BFC00E5CA40 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		77813164202A5BFC00E5CA40 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		77813165202A5BFC00E5CA40 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		7781316E202A5C4B00E5CA40 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		7781316F202A5C4B00E5CA40 /* NSString+Localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		77813170202A5C4B00E5CA40 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		77813171202A5C4B00E5CA40 /* NotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		77813172202A5C4B00E5CA40 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		77813173202A5C4B00E5CA40 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		77813174202A5C4B00E5CA40 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		77813175202A5C4B00E5CA40 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		77813176202A5C4B00E5CA40 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		77813177202A5C4B00E5CA40 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		77813178202A5C4B00E5CA40 /* NotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		77813179202A5C4B00E5CA40 /* NSString+Localize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		77813181202A5C9400E5CA40 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		77813182202A5C9400E5CA40 /* TicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		77813183202A5C9400E5CA40 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		77813184202A5C9400E5CA40 /* TicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		77813188202A5CCA00E5CA40 /* Airport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		77813189202A5CCA00E5CA40 /* FavoriteTicket+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7781318A202A5CCA00E5CA40 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		7781318B202A5CCA00E5CA40 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		7781318C202A5CCA00E5CA40 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		7781318D202A5CCA00E5CA40 /* FavoriteTicket+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataClass.m"; sourceTree = "<group>"; };
+		7781318E202A5CCA00E5CA40 /* FavoriteTicket+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7781318F202A5CCA00E5CA40 /* MapPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		77813190202A5CCA00E5CA40 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		77813191202A5CCA00E5CA40 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		77813192202A5CCB00E5CA40 /* FavoriteTicket+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataClass.h"; sourceTree = "<group>"; };
+		77813193202A5CCB00E5CA40 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		77813194202A5CCB00E5CA40 /* MapPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		77813195202A5CCB00E5CA40 /* Airport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		7781319D202A5EAF00E5CA40 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7781322F202A615300E5CA40 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		77813240202CD43F00E5CA40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		77813247202CE06A00E5CA40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77813248202CE06A00E5CA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7781324A202CE16600E5CA40 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = CourseWorkAir/ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7781324C202CE18100E5CA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = CourseWorkAir/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ABD520A6EA082009E2A6191C /* Pods_CourseWorkAir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseWorkAir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E441925957B4049DBB7FB6 /* Pods-CourseWorkAir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseWorkAir.release.xcconfig"; path = "Pods/Target Support Files/Pods-CourseWorkAir/Pods-CourseWorkAir.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7781312A202A481900E5CA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28401A9467B75EF9CC31EA8A /* Pods_CourseWorkAir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426456B0DD0A1661862F18E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E6BF27D31EFE8489BFB490C /* Pods-CourseWorkAir.debug.xcconfig */,
+				C8E441925957B4049DBB7FB6 /* Pods-CourseWorkAir.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77813124202A481900E5CA40 = {
+			isa = PBXGroup;
+			children = (
+				77813249202CE16600E5CA40 /* Localizable.strings */,
+				7781322F202A615300E5CA40 /* Pods.xcodeproj */,
+				7781319D202A5EAF00E5CA40 /* Podfile */,
+				7781312F202A481900E5CA40 /* CourseWorkAir */,
+				7781312E202A481900E5CA40 /* Products */,
+				426456B0DD0A1661862F18E8 /* Pods */,
+				BAA2979A4FE05DD66128288A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7781312E202A481900E5CA40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7781312D202A481900E5CA40 /* CourseWorkAir.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7781312F202A481900E5CA40 /* CourseWorkAir */ = {
+			isa = PBXGroup;
+			children = (
+				77813187202A5CB400E5CA40 /* Models */,
+				77813180202A5C7E00E5CA40 /* Views */,
+				77813153202A596100E5CA40 /* Controllers */,
+				7781314D202A54F400E5CA40 /* HelpClasses */,
+				77813146202A4ECE00E5CA40 /* Data */,
+				77813130202A481900E5CA40 /* AppDelegate.h */,
+				77813131202A481900E5CA40 /* AppDelegate.m */,
+				77813133202A481900E5CA40 /* ViewController.h */,
+				77813134202A481900E5CA40 /* ViewController.m */,
+				77813136202A481900E5CA40 /* Main.storyboard */,
+				77813139202A481900E5CA40 /* Assets.xcassets */,
+				7781313B202A481900E5CA40 /* LaunchScreen.storyboard */,
+				7781313E202A481900E5CA40 /* Info.plist */,
+				7781313F202A481900E5CA40 /* main.m */,
+			);
+			path = CourseWorkAir;
+			sourceTree = "<group>";
+		};
+		77813146202A4ECE00E5CA40 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77813147202A4FBA00E5CA40 /* airports.json */,
+				77813148202A4FBA00E5CA40 /* cities.json */,
+				77813149202A4FBA00E5CA40 /* countries.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7781314D202A54F400E5CA40 /* HelpClasses */ = {
+			isa = PBXGroup;
+			children = (
+				77813176202A5C4B00E5CA40 /* APIManager.h */,
+				77813170202A5C4B00E5CA40 /* APIManager.m */,
+				77813172202A5C4B00E5CA40 /* CoreDataHelper.h */,
+				77813174202A5C4B00E5CA40 /* CoreDataHelper.m */,
+				77813173202A5C4B00E5CA40 /* DataManager.h */,
+				7781316E202A5C4B00E5CA40 /* DataManager.m */,
+				77813175202A5C4B00E5CA40 /* LocationService.h */,
+				77813177202A5C4B00E5CA40 /* LocationService.m */,
+				77813178202A5C4B00E5CA40 /* NotificationCenter.h */,
+				77813171202A5C4B00E5CA40 /* NotificationCenter.m */,
+				7781316F202A5C4B00E5CA40 /* NSString+Localize.h */,
+				77813179202A5C4B00E5CA40 /* NSString+Localize.m */,
+			);
+			path = HelpClasses;
+			sourceTree = "<group>";
+		};
+		77813153202A596100E5CA40 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7781315F202A5BFB00E5CA40 /* ContentViewController.h */,
+				7781315E202A5BFB00E5CA40 /* ContentViewController.m */,
+				77813159202A5BFB00E5CA40 /* MainViewController.h */,
+				7781315C202A5BFB00E5CA40 /* MainViewController.m */,
+				77813162202A5BFC00E5CA40 /* MapViewController.h */,
+				77813160202A5BFC00E5CA40 /* MapViewController.m */,
+				7781315B202A5BFB00E5CA40 /* PlaceViewController.h */,
+				77813165202A5BFC00E5CA40 /* PlaceViewController.m */,
+				77813163202A5BFC00E5CA40 /* TabBarController.h */,
+				77813164202A5BFC00E5CA40 /* TabBarController.m */,
+				77813161202A5BFC00E5CA40 /* TicketsViewController.h */,
+				7781315A202A5BFB00E5CA40 /* TicketsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77813180202A5C7E00E5CA40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77813181202A5C9400E5CA40 /* ProgressView.h */,
+				77813183202A5C9400E5CA40 /* ProgressView.m */,
+				77813184202A5C9400E5CA40 /* TicketTableViewCell.h */,
+				77813182202A5C9400E5CA40 /* TicketTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77813187202A5CB400E5CA40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77813188202A5CCA00E5CA40 /* Airport.h */,
+				77813195202A5CCB00E5CA40 /* Airport.m */,
+				7781318C202A5CCA00E5CA40 /* City.h */,
+				77813193202A5CCB00E5CA40 /* City.m */,
+				77813190202A5CCA00E5CA40 /* Country.h */,
+				7781318B202A5CCA00E5CA40 /* Country.m */,
+				77813192202A5CCB00E5CA40 /* FavoriteTicket+CoreDataClass.h */,
+				7781318D202A5CCA00E5CA40 /* FavoriteTicket+CoreDataClass.m */,
+				77813189202A5CCA00E5CA40 /* FavoriteTicket+CoreDataProperties.h */,
+				7781318E202A5CCA00E5CA40 /* FavoriteTicket+CoreDataProperties.m */,
+				7781318F202A5CCA00E5CA40 /* MapPrice.h */,
+				77813194202A5CCB00E5CA40 /* MapPrice.m */,
+				7781318A202A5CCA00E5CA40 /* Ticket.h */,
+				77813191202A5CCA00E5CA40 /* Ticket.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77813230202A615300E5CA40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77813237202A615400E5CA40 /* Pods_CourseWorkAir.framework */,
+				77813239202A615400E5CA40 /* YYCache.framework */,
+				7781323B202A615400E5CA40 /* YYImage.framework */,
+				7781323D202A615400E5CA40 /* YYWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA2979A4FE05DD66128288A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD520A6EA082009E2A6191C /* Pods_CourseWorkAir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7781312C202A481900E5CA40 /* CourseWorkAir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77813143202A481900E5CA40 /* Build configuration list for PBXNativeTarget "CourseWorkAir" */;
+			buildPhases = (
+				7A6891AE60F0C1EE1E21121E /* [CP] Check Pods Manifest.lock */,
+				77813129202A481900E5CA40 /* Sources */,
+				7781312A202A481900E5CA40 /* Frameworks */,
+				7781312B202A481900E5CA40 /* Resources */,
+				B604273BCE707ADA11FEE77F /* [CP] Embed Pods Frameworks */,
+				4907BB75B589C58B2A1EBE9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CourseWorkAir;
+			productName = CourseWorkAir;
+			productReference = 7781312D202A481900E5CA40 /* CourseWorkAir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77813125202A481900E5CA40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Андрей";
+				TargetAttributes = {
+					7781312C202A481900E5CA40 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 77813128202A481900E5CA40 /* Build configuration list for PBXProject "CourseWorkAir" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 77813124202A481900E5CA40;
+			productRefGroup = 7781312E202A481900E5CA40 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 77813230202A615300E5CA40 /* Products */;
+					ProjectRef = 7781322F202A615300E5CA40 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7781312C202A481900E5CA40 /* CourseWorkAir */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		77813237202A615400E5CA40 /* Pods_CourseWorkAir.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CourseWorkAir.framework;
+			remoteRef = 77813236202A615400E5CA40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		77813239202A615400E5CA40 /* YYCache.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YYCache.framework;
+			remoteRef = 77813238202A615400E5CA40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7781323B202A615400E5CA40 /* YYImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YYImage.framework;
+			remoteRef = 7781323A202A615400E5CA40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7781323D202A615400E5CA40 /* YYWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YYWebImage.framework;
+			remoteRef = 7781323C202A615400E5CA40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7781312B202A481900E5CA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7781314C202A4FBA00E5CA40 /* countries.json in Resources */,
+				7781313D202A481900E5CA40 /* LaunchScreen.storyboard in Resources */,
+				7781314B202A4FBA00E5CA40 /* cities.json in Resources */,
+				7781314A202A4FBA00E5CA40 /* airports.json in Resources */,
+				7781313A202A481900E5CA40 /* Assets.xcassets in Resources */,
+				7781324B202CE16700E5CA40 /* Localizable.strings in Resources */,
+				7781319E202A5EB000E5CA40 /* Podfile in Resources */,
+				77813138202A481900E5CA40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4907BB75B589C58B2A1EBE9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CourseWorkAir/Pods-CourseWorkAir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A6891AE60F0C1EE1E21121E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CourseWorkAir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B604273BCE707ADA11FEE77F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CourseWorkAir/Pods-CourseWorkAir-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CourseWorkAir/Pods-CourseWorkAir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77813129202A481900E5CA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7781317C202A5C4B00E5CA40 /* NotificationCenter.m in Sources */,
+				77813197202A5CCB00E5CA40 /* FavoriteTicket+CoreDataClass.m in Sources */,
+				7781317E202A5C4B00E5CA40 /* LocationService.m in Sources */,
+				77813167202A5BFC00E5CA40 /* TicketsViewController.m in Sources */,
+				7781316A202A5BFC00E5CA40 /* ContentViewController.m in Sources */,
+				7781317F202A5C4B00E5CA40 /* NSString+Localize.m in Sources */,
+				7781319B202A5CCB00E5CA40 /* MapPrice.m in Sources */,
+				77813185202A5C9400E5CA40 /* TicketTableViewCell.m in Sources */,
+				7781316D202A5BFC00E5CA40 /* PlaceViewController.m in Sources */,
+				77813198202A5CCB00E5CA40 /* FavoriteTicket+CoreDataProperties.m in Sources */,
+				7781316C202A5BFC00E5CA40 /* TabBarController.m in Sources */,
+				7781317D202A5C4B00E5CA40 /* CoreDataHelper.m in Sources */,
+				7781316B202A5BFC00E5CA40 /* MapViewController.m in Sources */,
+				77813186202A5C9400E5CA40 /* ProgressView.m in Sources */,
+				77813135202A481900E5CA40 /* ViewController.m in Sources */,
+				7781319C202A5CCB00E5CA40 /* Airport.m in Sources */,
+				77813140202A481900E5CA40 /* main.m in Sources */,
+				7781317B202A5C4B00E5CA40 /* APIManager.m in Sources */,
+				77813168202A5BFC00E5CA40 /* MainViewController.m in Sources */,
+				7781317A202A5C4B00E5CA40 /* DataManager.m in Sources */,
+				77813199202A5CCB00E5CA40 /* Ticket.m in Sources */,
+				7781319A202A5CCB00E5CA40 /* City.m in Sources */,
+				77813132202A481900E5CA40 /* AppDelegate.m in Sources */,
+				77813196202A5CCB00E5CA40 /* Country.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77813136202A481900E5CA40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77813247202CE06A00E5CA40 /* ru */,
+				77813248202CE06A00E5CA40 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7781313B202A481900E5CA40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7781313C202A481900E5CA40 /* Base */,
+				77813240202CD43F00E5CA40 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		77813249202CE16600E5CA40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7781324A202CE16600E5CA40 /* ru */,
+				7781324C202CE18100E5CA40 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77813141202A481900E5CA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77813142202A481900E5CA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77813144202A481900E5CA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6BF27D31EFE8489BFB490C /* Pods-CourseWorkAir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CourseWorkAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hm.CourseWorkAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CourseWorkAir/HelpClasses/CourseWorkAir-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77813145202A481900E5CA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E441925957B4049DBB7FB6 /* Pods-CourseWorkAir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CourseWorkAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hm.CourseWorkAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CourseWorkAir/HelpClasses/CourseWorkAir-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77813128202A481900E5CA40 /* Build configuration list for PBXProject "CourseWorkAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77813141202A481900E5CA40 /* Debug */,
+				77813142202A481900E5CA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77813143202A481900E5CA40 /* Build configuration list for PBXNativeTarget "CourseWorkAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77813144202A481900E5CA40 /* Debug */,
+				77813145202A481900E5CA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77813125202A481900E5CA40 /* Project object */;
+}
